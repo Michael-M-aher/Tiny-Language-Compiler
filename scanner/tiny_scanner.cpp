@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "CompilersTask_1_Scanner.cpp"
+#include "utils.cpp"
 
 using namespace std;
 
