@@ -49,10 +49,10 @@ string returnTokenTypeSymbolic(string &s){
     return "Not Found";
 }
 
-int main() {
-    ofstream  out;
-    InFile in("input.txt");
-    out.open("out.txt");
+int main( int argc, char **argv) {
+    char *input_file_name = argv[1];
+    CompilerInfo compilerInfo = CompilerInfo(input_file_name, "out.txt", "debug.txt");
+    InFile in = compilerInfo.in_file;
     vector<Result> res;
     while (in.GetNewLine()){
         string line = in.GetNextTokenStr();
@@ -104,7 +104,7 @@ int main() {
     res.emplace_back(in.cur_line_num + 1, "EOF", "EndFile");
 
     for (auto i:res) {
-        out << "[" << i.lineNumber << "] " << i.actualString << " " << i.type << "\n";
+        fprintf(compilerInfo.out_file.file, "[%d] %s %s\n", i.lineNumber, i.actualString.c_str(), i.type.c_str());
     }
     return 0;
 }
