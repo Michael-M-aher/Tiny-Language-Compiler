@@ -51,6 +51,18 @@ string returnTokenTypeSymbolic(string &s){
 
 int main( int argc, char **argv) {
     char *input_file_name = argv[1];
+    if (!input_file_name)
+    {
+        printf("error: no input file\n");
+        return 1;
+    }
+    FILE *input_file = fopen(input_file_name, "r");
+    if (!input_file)
+    {
+        printf("error: file %s does not exist\n", input_file_name);
+        return 1;
+    }
+    fclose(input_file);
     CompilerInfo compilerInfo = CompilerInfo(input_file_name, "out.txt", "debug.txt");
     InFile in = compilerInfo.in_file;
     vector<Result> res;
