@@ -1,6 +1,6 @@
 # TINY Language Compiler
 
-<img src="https://i.imgur.com/HcMyopH.jpeg" width="800" height="400">
+<img src="https://i.imgur.com/HcMyopH.jpeg" width="800" height="500">
 
 ## Brief
 
