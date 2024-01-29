@@ -1,6 +1,6 @@
 # TINY Language Compiler
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/25803558/292908393-8c43c9bb-9565-4a50-818d-5417127686a8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231226T184921Z&X-Amz-Expires=300&X-Amz-Signature=8aad4f3bae69be4b43583da3cf9cbcdac126bf04259da904e4948c0c46b21799&X-Amz-SignedHeaders=host&actor_id=25803558&key_id=0&repo_id=726574775" width="800" height="400">
+<img src="https://i.imgur.com/HcMyopH.jpeg" width="800" height="400">
 
 ## Brief
 
